@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FAST & US</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- INTRO -->
+
+    <section id="intro">
+
+        <div class="intro-content">
+
+            <div class="intro-line"></div>
+
+            <p class="small-title">A STORY WRITTEN AT FULL SPEED</p>
+
+            <h1>FAST <span>&</span> US</h1>
+
+            <p class="intro-subtitle">
+                Una historia en 11 capítulos
+            </p>
+
+            <p class="dedication">
+                Para Nico
+            </p>
+
+            <button id="startButton">
+                ENCENDER MOTORES
+            </button>
+
+            <p class="hint">
+                Ponte cómodo. Esta historia es para ti.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCIA -->
+
+    <main id="experience">
+
+        <div id="scene-container"></div>
+
+
+        <!-- HUD -->
+
+        <div id="hud">
+
+            <div class="brand">
+                FAST <span>&</span> US
+            </div>
+
+            <div class="chapter-counter">
+                <span id="currentChapter">01</span>
+                <span class="counter-line"></span>
+                <span>11</span>
+            </div>
+
+            <div class="instructions">
+                <span>◉</span>
+                Explora la pista
+                <br>
+                <span>↔️</span>
+                Arrastra para mirar alrededor
+                <br>
+                <span>+</span>
+                Usa la rueda para acercarte
+            </div>
+
+            <button id="musicButton">
+                ♪ MUSIC
+            </button>
+
+        </div>
+
+
+        <!-- INDICADOR INFERIOR -->
+
+        <div id="bottomHud">
+
+            <div>
+                <span class="red-dot"></span>
+                OUR STORY
+            </div>
+
+            <div id="chapterName">
+                THE BEGINNING
+            </div>
+
+        </div>
+
+
+        <!-- MODAL -->
+
+        <div id="storyModal">
+
+            <div class="modal-background"></div>
+
+            <div class="story-card">
+
+                <button id="closeModal">×</button>
+
+                <div class="story-image-container">
+                    <img id="storyImage" src="" alt="">
+                    <div class="image-gradient"></div>
+
+                    <div class="car-number" id="modalNumber">
+                        01
+                    </div>
+                </div>
+
+                <div class="story-content">
+
+                    <p class="chapter-label" id="modalChapter">
+                        CHAPTER 01
+                    </p>
+
+                    <h2 id="modalTitle">
+                        EL COMIENZO
+                    </h2>
+
+                    <div class="story-line"></div>
+
+                    <p id="modalText"></p>
+
+                    <div class="story-navigation">
+
+                        <button id="previousButton">
+                            ← ANTERIOR
+                        </button>
+
+                        <div class="progress">
+                            <span id="progressBar"></span>
+                        </div>
+
+                        <button id="nextButton">
+                            SIGUIENTE →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FINAL -->
+
+        <div id="finalScreen">
+
+            <div class="final-stars"></div>
+
+            <div class="final-content">
+
+                <p class="final-small">
+                    THE RACE NEVER ENDS
+                </p>
+
+                <h2>FAST <span>&</span> US</h2>
+
+                <div class="final-line"></div>
+
+                <p class="final-message">
+                    Nico, si la vida fuera una carretera,
+                    elegiría recorrer cada kilómetro contigo.
+                </p>
+
+                <p class="final-signature">
+                    Sin frenos.<br>
+                    Sin mirar atrás.<br>
+                    Siempre juntos.
+                </p>
+
+                <button id="restartButton">
+                    VOLVER A EMPEZAR
+                </button>
+
+            </div>
+
+        </div>
+        <div id="chapterModal">
+
+    <div id="chapterCard">
+
+        <button id="closeChapter">
+            ×
+        </button>
+
+        <div class="chapterNumber" id="chapterNumber">
+            CAPÍTULO 01
+        </div>
+
+        <h2 id="chapterTitle">
+            Mitsubishi Eclipse
+        </h2>
+
+        <div class="chapterCar">
+            <img id="chapterImage" src="" alt="">
+        </div>
+
+        <p id="chapterText">
+        </p>
+
+        <button id="backChapter">
+            VOLVER A LA GALAXIA
+        </button>
+
+    </div>
+
+</div>
+
+    </main>
+
+
+    <!-- THREE.JS -->
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
